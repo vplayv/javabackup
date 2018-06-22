@@ -1,0 +1,43 @@
+{
+  "C:\\Program Files\\Java\\jre7\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\rt.jar",
+    "status": "RESOLVED",
+    "error": "No class path info available for \u0027C:\\Program Files\\Java\\jre7\\lib\\rt.jar\u0027. Skipped."
+  },
+  "C:\\Users\\ssu_user\\workspace\\sadasd\\src": {
+    "location": "C:\\Users\\ssu_user\\workspace\\sadasd\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\ssu_user\\workspace\\sadasd\\src\u0027. Skipped."
+  },
+  "C:\\Users\\ssu_user\\workspace\\Throttle\\src": {
+    "location": "C:\\Users\\ssu_user\\workspace\\Throttle\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\ssu_user\\workspace\\Throttle\\src\u0027. Skipped."
+  },
+  "C:\\Users\\ssu_user\\workspace\\Week5\\src": {
+    "location": "C:\\Users\\ssu_user\\workspace\\Week5\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\ssu_user\\workspace\\Week5\\src\u0027. Skipped."
+  },
+  "C:\\Users\\ssu_user\\workspace\\Week6\\src": {
+    "location": "C:\\Users\\ssu_user\\workspace\\Week6\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\ssu_user\\workspace\\Week6\\src\u0027. Skipped."
+  },
+  "C:\\Users\\ssu_user\\workspace\\hangman\\src": {
+    "location": "C:\\Users\\ssu_user\\workspace\\hangman\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\ssu_user\\workspace\\hangman\\src\u0027. Skipped."
+  },
+  "C:\\Users\\ssu_user\\workspace\\Double Linked List\\src": {
+    "location": "C:\\Users\\ssu_user\\workspace\\Double Linked List\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\ssu_user\\workspace\\Double Linked List\\src\u0027. Skipped."
+  },
+  "C:\\Users\\ssu_user\\workspace\\Week9\\src": {
+    "location": "C:\\Users\\ssu_user\\workspace\\Week9\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\ssu_user\\workspace\\Week9\\src\u0027. Skipped."
+  }
+}

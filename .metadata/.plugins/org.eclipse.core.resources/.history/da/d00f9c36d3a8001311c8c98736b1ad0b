@@ -1,0 +1,15 @@
+
+public class Sample7 {
+	/*¡°Your name¡±
+	Soongsil University
+	School of Computer Science and Engineering
+	College of Information Technology
+*/
+	public static void main(String []args)
+	{
+		System.out.println("À¯¿µ±Ù"+
+	"Soongsil University"+
+	"School of Computer Science and Engineering"+
+	"College of Information Technology"
+	}
+}

@@ -1,0 +1,15 @@
+
+import java.util.Scanner;
+public class Sample2 {
+	//@SuppressWarnings("resource")
+	public static void main(String []args)
+	{
+		String name;
+		Scanner input;
+		input=new Scanner(System.in);
+		name=input.nextLine();
+		System.out.println("+-----+" + "+ " + name + " +" + "+-----+");
+		input.close();
+	}
+
+}

@@ -1,0 +1,13 @@
+package aa;
+
+public class JHJJ {
+	public void main(String []args){
+		asdzxc X1 = new asdzxc();
+		System.out.print(X1);
+	}
+}
+class asdzxc{
+	asdzxc(){
+		
+}
+}

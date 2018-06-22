@@ -1,0 +1,9 @@
+/**
+ * 
+2. Write a program that allows the user to specify a circle with two mouse presses, the first one on the center and second on a point on the periphery.
+ * @author ssu_user
+ *
+ */
+public class Week11_Sample02 {
+	public static void main(String []args)
+}

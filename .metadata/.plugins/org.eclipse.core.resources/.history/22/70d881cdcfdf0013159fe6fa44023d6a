@@ -1,0 +1,61 @@
+import java.awt.Rectangle;
+/**
+ * 
+ * @author ssu_user
+ * Practical 11
+
+1. Implement a class AnotherRectangle that extends the Rectangle class from Java API. 
+You should also overrides the equals(…) method that is inherited from Object class. 
+Implement equals(…) so that two objects belonging to AnotherRectangle are equal if they agree in both length and width.
+
+You can use the following Tester to test your program.
+
+public class Tester
+{
+	public static void main(String []args)
+{
+AnotherRectangle r1= new AnotherRectangle(3,4);
+AnotherRectangle r2= new AnotherRectangle(3,4);
+AnotherRectangle r3= new AnotherRectangle(5,6);
+System.out.println(“r1.equals(r2):”+r1.equals(r2));
+System.out.println(“r1.equals(r3):”+r1.equals(r3));
+System.out.println(“r1==r2: “+(r1==r2);
+
+}
+}
+Expected output:
+ 	r1.equals(r2):true
+r1.equals(r3):false
+r1==r2: false
+ *
+ */
+public class Week11_Sample01 {
+	public static void main(String []args)
+	{
+	AnotherRectangle r1= new AnotherRectangle(3,4);
+	AnotherRectangle r2= new AnotherRectangle(3,4);
+	AnotherRectangle r3= new AnotherRectangle(5,6);
+	System.out.println("asdr1.equals(r2):"+r1.equals(r2));
+	System.out.println("r1.equals(r3):"+r1.equals(r3));
+	System.out.println("r1==r2: "+(r1==r2));
+	}
+}
+class AnotherRectangle extends Rectangle{
+	private static final long serialVersionUID = 1L;
+	double a,b;
+	AnotherRectangle(double a, double b){
+		System.out.println("사각형 생성");
+		this.a = a;
+		this.b = b;
+		this.setSize((int)this.a,(int)this.b);
+	}
+	public boolean equals(Object X){
+		Rectangle newRec = (Rectangle)X;
+		double newA = newRec.getWidth();
+		double newB = newRec.getHeight();
+		if(this.a == newA && this.b==newB)
+			return true;
+		else
+			return false;
+	}
+}

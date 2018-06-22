@@ -1,0 +1,12 @@
+package aa;
+
+/*
+ * 5.	Write a program that prompts the user for an integer, using JOptionPane, and then draws as many rectangles at random positions, 
+ *      random color and random dimension as the user requested.
+ */
+public class bb {
+	public static void main(String []args){
+		
+	}
+	class 
+}

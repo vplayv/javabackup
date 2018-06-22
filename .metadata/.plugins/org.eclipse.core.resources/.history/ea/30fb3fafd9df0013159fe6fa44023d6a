@@ -1,0 +1,89 @@
+import java.util.Scanner;
+
+/*
+ * Implement a superclass Person. Make two classes, Student and Instructor, that inherit from Person. 
+ * A person has a name and a year of birth. A student has a major, and an instructor has a salary.
+ * Write class declarations, the constructors, and the methods toString() for all classes. 
+ * Supply a test program that tests these classes and methods.
+
+ */
+public class Week11_Sample03 {
+	public static void main(String []args){
+		System.out.println("닝겐 학생과 닝겐강사");
+		System.out.println("먼저 학생");
+		System.out.println("먼저 학생의 연도, 이름, 전공 입력");
+		Scanner input1 = new Scanner(System.in);
+		System.out.println("---------------");
+		int a = input1.nextInt();
+		System.out.println("---------------");
+		input1.reset();
+		String b = input1.nextLine();
+		System.out.println("---------------");
+		String c = input1.nextLine();
+		System.out.println("---------------");
+		Student s1 = new Student(a,b,c);
+		System.out.println("다음 강사의 연도, 이름, 급여 입력");
+		Scanner input2 = new Scanner(System.in);
+		System.out.println("---------------");
+		int d = input2.nextInt();
+		System.out.println("---------------");
+		String e = input2.nextLine();
+		System.out.println("---------------");
+		int f = input2.nextInt();
+		System.out.println("---------------");
+		Instructor I1 = new Instructor(d,e,f);
+		System.out.println("학생의 연도 : " + s1.toString());
+	}
+}
+class Person{
+	//슈퍼 클래스 이름이랑 생일
+	private int year;
+	private String name;
+	Person(int year, String name){
+		this.year = year;
+		this.name = name.toString();
+	}
+	int getYear(){
+		return year;
+	}
+	String getName(){
+		return this.toString();
+	}
+	void setYear(int year){
+		this.year = year;
+	}
+	void setName(String name){
+		this.name = name.toString();
+	}
+}
+class Student extends Person{
+	private String major;
+	Student(int year, String name, String major) {
+		super(year, name);
+		// TODO Auto-generated constructor stub
+		this.major = major;
+	}
+	String getMajor(){
+		System.out.println("리턴 전공");
+		return major.toString();
+	}
+	void setMajor(String major){
+		System.out.println("셋 전공");
+		this.major = major.toString();
+	}
+}
+class Instructor extends Person{
+	private int salary;
+	Instructor(int year, String name, int salary) {
+		super(year, name);
+		// TODO Auto-generated constructor stub
+		this.salary = salary;
+	}
+	
+	void setSalary(int salary){
+		this.salary = salary;
+	}
+	int getSalary(){
+		return this.salary;
+	}
+}

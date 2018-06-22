@@ -1,0 +1,27 @@
+package com.jinglerun;
+
+
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+
+public class Wall extends MapObject
+{
+	public Wall(float x1 , float x2 , float y1,float y2,float screenX, float screenY)
+	{
+		super(x1, x2, y1, y2,false,screenX,screenY);
+	}
+	public void set(Resources get)
+	{
+		bitmap= Bitmap.createScaledBitmap(BitmapFactory.decodeResource(get, R.drawable.wall1_v),(int)(x2-x1),(int)(y2-y1), true);
+	}
+	@Override
+	public boolean draw(float mapX,float mapY,Canvas canvas,Paint paint)
+	{
+		if(bitmap != null)
+			canvas.drawBitmap(bitmap,x1-mapX+screenX/2, y1,paint);
+		return false;
+	}
+}
